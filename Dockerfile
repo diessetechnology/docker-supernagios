@@ -326,6 +326,11 @@ ADD config/sv/carbon/run /etc/sv/carbon/run
 ADD config/sv/postfix/run /etc/sv/postfix/run
 ADD config/sv/graphios/run /etc/sv/graphios/run
 
+RUN git clone https://github.com/HariSekhon/Nagios-Plugins \
+&& cd nagios-plugins \
+&& make build
+
+
 RUN rm -rvf /etc/sv/getty-5 && \
   chmod +x /run.sh /etc/sv/apache/run /etc/sv/graphios/run /etc/sv/postfix/run /etc/sv/carbon/run && \
   ln -s /etc/sv/* /etc/service && \
