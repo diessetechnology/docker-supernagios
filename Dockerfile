@@ -27,8 +27,6 @@ ENV NRDP_VERSION            1.5.2
 ENV NRPE_VERSION            3.2.1
 ENV OKCONFIG_VERSION        1.3.2-1
 
-# Remove below if you want use default pip mirror sites
-ADD config/pip.conf /root/.config/pip/pip.conf
 RUN set -eux; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
