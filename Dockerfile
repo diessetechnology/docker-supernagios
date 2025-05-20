@@ -39,7 +39,7 @@ RUN set -eux; \
     libapache2-mod-php libgd2-xpm-dev libmcrypt-dev libssl-dev libcairo2-dev libffi-dev libapache2-mod-wsgi libmysql++-dev libmysqlclient-dev libnet-snmp-perl \
     m4 mysql-client \
     netcat \
-    python python-dev python3-dev parallel php7.0-xml postfix \
+    python python-dev python3-dev parallel php7.0-xml \
     runit \
     smbclient snmp snmpd snmp-mibs-downloader sudo \
     unzip; \
